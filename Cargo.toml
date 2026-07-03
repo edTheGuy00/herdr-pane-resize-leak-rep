@@ -1,0 +1,10 @@
+[package]
+name = "herdr-pane-resize-leak-rep"
+version = "0.1.0"
+edition = "2021"
+description = "MRE: herdr terminal-attach client re-attaching to another terminal leaks direct_attach_resize_locks"
+license = "MIT"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+bincode = { version = "2", features = ["serde"] }
